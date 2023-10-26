@@ -1,0 +1,43 @@
+   *{
+    margin: 10px;
+    padding: 0;
+   }
+   h1{
+        color: #fff;
+        text-align: center;
+    }
+    .button{
+        height: 50px;
+        width: 50px;
+        border: 1px solid white;
+        display:inline-block;
+        /* cursor: pointer; */
+    }
+    #red{
+        background-color: red;
+        border-radius: 10px;
+    }
+    #pink{
+        background-color: pink;
+        border-radius: 10px;
+    }
+    #skyblue{
+        background-color: skyblue;
+        border-radius: 10px;
+    }
+    #purple{
+        background-color: purple;
+        border-radius: 10px;
+    }
+    #green{
+        background-color: green;
+        border-radius: 10px;
+    }
+    h3{
+        color: #fff;
+        width: 30%;
+        padding: 20px 0;
+    }
+    div{
+        height: 10vh;
+    }
