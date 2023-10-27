@@ -1,0 +1,47 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+form{
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+label{
+    color: #000;
+    font-weight: 600;
+}
+button{ 
+    font-weight: 600; 
+}
+#result{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(6, 75, 102);;
+}
+#note{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(6, 75, 102);;
+}
+.BMI-chart{
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    padding: 1px 20px;
+    margin: 20px;
+}
+.BMI-chart h4{
+    text-align: center;
+    
+}
+
