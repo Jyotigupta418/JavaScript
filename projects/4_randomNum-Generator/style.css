@@ -1,0 +1,20 @@
+body{
+    background-color: #210101;
+    color: white;
+
+}
+h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    
+}
+.form{
+    flex-direction: column;
+    display: flex;
+}

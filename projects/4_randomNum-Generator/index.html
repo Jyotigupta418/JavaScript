@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Guess a Random Number Game</h1>
+   
+
+    <div id="container">
+        <form class="form">
+            <label for="Guess Field" style="text-align: center; font-size: 25px;" >Guess a number between 1 to 20</label><br>
+            <input type="text" id="guess"><br>
+            <input type="submit" id="submit">
+        </form>
+    
+        <div class="results">
+            <p>Previous Guess: <span id="prevGuess"></span></p>
+            <p>no of guesses remaining: <span id="remainingGuess"></span></p>
+            <p class="low0rhigh"></p>
+        </div>
+    </div>
+    
+    
+</body>
+
+    <script type="module" src="generator.js"></script>
+</html>
