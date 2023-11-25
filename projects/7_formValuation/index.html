@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <fieldset id="container">
+      <legend>Registration Form</legend>
+
+      <div class="controlSection">
+        <input type="text" id="username" required />
+        <span>Full Name</span>
+        <div class="usererror color"></div>
+      </div>
+
+      <div class="controlSection">
+        <input type="text" id="email" required />
+        <span>Email</span>
+        <div class="mailerror color"></div>
+      </div>
+
+      <div class="controlSection">
+        <input type="password" id="password" required />
+        <span>Password</span>
+        <div class="passerror color"></div>
+      </div>
+
+      <div class="controlSection">
+        <input type="password" id="confirmpassword" required />
+        <span>Confirm Password</span>
+        <div class="checkpasserror color"></div>
+      </div>
+
+      <a href="#" id="submit">SIGN UP</a>
+    </fieldset>
+  </body>
+
+    <script type="module" src="formVal.js"></script>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #c4bfbf;
+  background: linear-gradient(#063349 -5%, #0f0fa5 20%, #00d4ff 110%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+body #container {
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 20%;
+  border-radius: 10px;
+  padding: 5px 22px 22px 22px;
+  border: inset 1px;
+  box-shadow: 3px 4px 8px 0.4px #046393;
+}
+body #container legend {
+  color: #fbf4f4;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 2px 5px;
+}
+body #container .controlSection {
+  position: relative;
+}
+body #container input {
+  display: block;
+  width: 100%;
+  height: 24px;
+  border: 0;
+  outline: 0;
+  margin-top: 1.9em;
+  border-radius: 3px;
+}
+body #container input {
+  padding: 2px;
+  font-size: 15px;
+  transition: 0.15s;
+  color: black;
+  font-weight: 400;
+}
+body #container input:focus {
+  outline: #fbf4f4 2px solid;
+}
+body #container input:focus ~ span, body #container input:valid ~ span {
+  top: -20px;
+  left: 0;
+  color: #fbf4f4;
+  font-weight: 500;
+}
+body #container #submit {
+  display: block;
+  float: right;
+  background-color: #1616f1;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  font-size: 13px;
+  transition: 0.4s;
+  color: #fbf4f4;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+body #container #submit:hover {
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+body #container span {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+body #container .color {
+  margin: 0px;
+  color: red;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */
