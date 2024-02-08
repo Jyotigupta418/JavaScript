@@ -18,7 +18,7 @@ Welcome to the JavaScript Projects Repository! This repository contains a collec
 
 7. Form Validation: Validate form inputs using JavaScript to ensure data integrity.
 
-8. Instagram Clone: A simplified version of Instagram, featuring user authentication, homepage navigation, search modal, message modal, post interaction, profile management, and more.
+8. Instagram Clone: A simplified version of Instagram, featuring user authentication, homepage navigation, search modal, message modal, post interaction, profile management, and more. You can also view the Instagram Clone project on LinkedIn to get a better understanding of how it looks: [Instagram Clone on LinkedIn](https://www.linkedin.com/posts/jyoti-kumari-gupta-88bb9829a_webdevelopment-frontenddevelopment-javascript-activity-7161226081771958273-CPmT?utm_source=share&utm_medium=member_desktop)
 
 ## How to Use: 
 
