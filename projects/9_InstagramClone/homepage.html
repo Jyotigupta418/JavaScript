@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/homeStyle.css">
+    <title>Insta HomePage Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div id="logo">
+                <a href="./homepage.html">
+                    <img src="./assets/images/homeScreen/wordlogoLight.png" alt="Instagram">
+                </a>
+            </div>
+
+            <div id="nav-bar-container">
+                <div class="nav-bar">
+                    <a href="./homepage.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar" id="searchIcon">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <a href="#">
+                        <i class="fa-regular fa-compass"></i>
+
+                        <span>Explore</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <a href="#">
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <span>Reels</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar" id="messageIcon">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-messenger ">
+                            <span class="notification-count">+3</span>
+                        </i>
+                        <span>Messages</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <a href="#">
+                        <i class="fa-regular fa-heart  ">
+                            <span class="notification-count">+5</span>
+                        </i>
+                        <span>Notifications</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <a href="#">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span>Create</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar" id="profileIcon">
+                    <a href="#">
+                        <i class="fa-solid fa-user "></i>
+                        <span>Profile Links</span>
+                    </a>
+                </div>
+
+                <div class="nav-bar">
+                    <a href="#">
+                        <i class="fa-solid fa-bars "></i>
+                        <span>More</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="nav-section">
+        <div class="searchModal dropmenu">
+            <h5 style="margin-top: 20px; margin-left: 10px;">Search</h5>
+            <input type="search" placeholder="Search"
+                style="padding: 6px; margin: 8px; margin-left: 20px; color: white; width: 75%; background-color: rgb(37, 35, 35); outline: 0;border-radius: 6px; border: 0.666667px solid rgb(38, 38, 38);"
+                id="searchInput" />
+            <i class="fa-solid fa-magnifying-glass" style="margin-right: -20px;"></i>
+            <p style="font-size: 12px; margin-left: 20px;">Recent</p>
+            <span class="searchlist"
+                style="display: flex; margin: 20px; margin-top: 2px; padding: 6px; border: 1px solid rgb(61, 61, 61); height: 280px;">
+                javascript, bootstrap, css, html</span>
+        </div>
+        <div class="messageModal dropmenu" style="width: 290px;">
+            <h5 style="margin-top: 20px; margin-left: 10px; display: inline-block;">Messages</h5><span>📝</span>
+            <div class="message-container" style="overflow-y : scroll; height: 80%;"></div>
+        </div>
+        <div class="profileModal dropmenu" style="height: 16%; width: 300px; top: 430px; left: 210px;">
+            <p style=" margin: 0; margin-left: 8px;">Profile Links:</p>
+            <a href="https://www.linkedin.com/in/jyoti-kumari-gupta-88bb9829a" target="_blank">Visit my LinkedIn
+                profile</a>
+            <a href="https://github.com/Jyotigupta418" target="_blank" style="margin: 0 0 8px 8px;">Visit my Github
+                profile</a>
+        </div>
+    </section>
+
+
+    <main class="main-content">
+
+        <article class="story-article">
+            <span style="display: flex; justify-content: flex-end; font-size: 10px; cursor: pointer;"
+                class="close">❌</span>
+            <div class="story">
+                <div class="">
+                    <a href="#">jennygupta10</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+                <p style="font-size: 14px; margin: 0; margin-left: 12px;">I'm a front-end developer</p>
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">JohnDoe45</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="./assets/images/homeScreen/story2.jpg" style="height:240px; width:260px"
+                            alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">BrightStar1910</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">Explorer247</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">TechGeek2024</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">CreativeMind</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">aditya_kumar</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+            <div class="story">
+                <div class="">
+                    <a href="#">reactnative</a>
+                    <a href="#" style="font-size: 12px;">Original audio</a>
+                </div>
+                <time class="current-time" style="font-size: 10px;"></time>
+
+                <div
+                    style="display: flex; margin: 12px; padding-top: 5px; padding-bottom: 5px; justify-content: space-around;">
+                    <div class="image-video">
+                        <img src="" style="height:240px; width:260px" alt="image/video">
+                    </div>
+                    <div class="like-comment-share-box" style="flex-direction: column; display: flex;">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div style="font-size: 14px; margin-left: 10px;" class="totalLikes">1295 likes</div>
+                <input type="text" placeholder="Add a comment..." class="add-comment"
+                    onkeydown="if (event.key === 'Enter') { event.target.value = ''; }" />
+            </div>
+
+
+            <span class="arrow prev" onclick="moveSlide(-1)" style="cursor: pointer;
+            position: absolute;
+            top: 45%;
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            font-size: 18px;
+            left: 10px;
+            ">&#10094;</span>
+            <span class="arrow next" onclick="moveSlide(1)" style="cursor: pointer;
+            position: absolute;
+            top: 45%;
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            font-size: 18px;
+            right: 10px;">&#10095;</span>
+
+        </article>
+        <section class="story-container">
+            <div style="width: 4px;"></div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/my-profile.jpg" alt="Profile 1">
+                </canvas>
+                <span>jennygupta10</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/reel10.jpg" alt="Profile 1">
+                </canvas>
+                <span>JohnDoe45</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/pp3.jpg" alt="Profile 1">
+                </canvas>
+                <span>BrightStar1910</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/pp7.jpg" alt="Profile 1">
+                </canvas>
+                <span>Explorer247</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/story5.png" alt="Profile 1">
+                </canvas>
+                <span>TechGeek2024</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/story6.jpg" alt="Profile 1">
+                </canvas>
+                <span>CreativeMind</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/story7.jpg" alt="Profile 1">
+                </canvas>
+                <span>aditya_kumar</span>
+            </div>
+            <div class="story-section">
+                <canvas class="story-item">
+                    <img src="./assets/images/homeScreen/reactnative.jpg" alt="Profile 1">
+                </canvas>
+                <span>reactnative</span>
+            </div>
+        </section>
+
+        <section class="post-reel-container">
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp1.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">Adventure_seekers</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: auto;">
+                    <img src="./assets/images/homeScreen/reel1.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Chasing sunsets and making
+                    memories🌅✨...
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp2.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">wanderlust_explorer</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel2.jpg"
+                        style="position: relative; height:430px; width:430px" alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Exploring new horizons one
+                    step at a time🌍👣
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp3.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">nature_lover_365</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel3.jpg"
+                        style="position: relative; height:430px; width:430px" alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Lost in the beauty of
+                    nature🍃🌺
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp4.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">travel_diaries_worldwide</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel4.jpg"
+                        style="position: relative; height:430px; width:430px" alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Capturing moments that take my
+                    breath away📸💫
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/reactnative.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">React Native</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel5.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Create Your Own Event App With
+                    Us!📲
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp6.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">explore_and_discover</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel6.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">In a world of possibilities, I
+                    choose to wander🌟🌿
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp7.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">outdoor_adventurer</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel7.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Finding peace in the colors of
+                    nature🎨🩷✌️
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp8.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">vibrant_views</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel8.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Letting the beauty of the
+                    world inspire me🌟🌎
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp9.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">motivational_quotes</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel9.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Believe in yourself and all
+                    that you are💖✨
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+            <article class="reels" style="border-top: 0; padding-top: 0;">
+                <div class="head-box">
+                    <div class="header">
+                        <a href="a">
+                            <canvas class="profile-canvas">
+                                <img src="./assets/images/homeScreen/pp10.jpg" alt="Profile 1">
+                            </canvas>
+                        </a>
+
+                        <div class="head-text">
+                            <a href="a">tech_news</a>
+                            <a href="b" style="font-size: 12px;">Original audio</a>
+                        </div>
+                        <time class="current-time"></time>
+                    </div>
+
+                    <div class="more-option">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Report</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" style="color: red; font-weight: 700;">Unfollow</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Remove from favourites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Share to...</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">copy link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-video" style="width: 468px;">
+                    <img src="./assets/images/homeScreen/reel10.jpg" style="position: relative; height:430px;"
+                        alt="image/video">
+                </div>
+                <div class="like-comment-share-save-box">
+                    <div class="like-comment-share-box">
+                        <span class="heart"><i class="fa-regular fa-heart" style="color: red; fill: red"
+                                title="Copy"></i></span>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"  onclick="this.style.color='gold', alert('Saved') "></i>
+                </div>
+
+                <div style="font-size: 14px;" class="totalLikes">1295 likes</div>
+                <p class="post-text" style="font-size: 14px;font-weight: 600; margin: 0;">Dan Maslin on LinkedIn: #ciso
+                    #cybersecurity #cyber
+                </p>
+
+                <div style="font-size: 14px; color: rgb(168, 168, 168);" class="totalComments">View all 1,145 comments
+                </div>
+                <input type="text" placeholder="Add a comment..." class="add-comment" id="commentInput" />
+                <i class="fa-regular fa-face-smile-beam"
+                    style="font-size: 12px; margin-left: -30px; color: rgb(168, 168, 168);"></i>
+
+            </article>
+
+
+            <div style="font-family:  sans-serif; font-weight: 100; cursor: pointer; color: rgb(168, 168, 168); font-size: 12px; margin-top: 10px; margin-bottom: 20px;"
+                class="load-more" onclick="this.innerHTML = 'Loading...';">Load more</div>
+
+        </section>
+
+    </main>
+
+    <section class="last-section">
+        <div class="user-profile">
+            <div style=" width: 319px;  display: flex; align-items: center;">
+                <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                    <a href="https://www.instagram.com/jennygupta1010/">
+                        <img src="./assets/images/homeScreen/my-profile.jpg" alt="user-profile-pic">
+                    </a>
+                </div>
+                <div class="user-name">
+                    <a href="https://www.instagram.com/jennygupta1010/">jennygupta1010</a>
+                    <span>Jenny Gupta</span>
+                </div>
+            </div>
+            <div class="switch-btn">Switch</div>
+        </div>
+
+        <div class="myprofile_links">
+            <a href="https://www.linkedin.com/in/jyoti-kumari-gupta-88bb9829a" target="_blank" class="links">
+                <i class="fa-brands fa-linkedin" style="color: #ffffff ;"></i>
+                Visit my LinkedIn profile❤️
+            </a>
+            <a href="https://github.com/Jyotigupta418" target="_blank" class="links">
+                <i class="fa-brands fa-github" style="color: #ffffff ;"></i>
+                Visit my Github profile❤️
+            </a>
+        </div>
+
+
+        <div class="suggestion-section">
+            <div class="suggested-for-you" style="flex-direction: row;">
+                <span>Suggested for you</span>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="user-profile" style="flex-direction: row;">
+                <div style=" width: 319px;  display: flex; align-items: center;">
+                    <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                        <a href="https://www.instagram.com/techgun.official/">
+                            <img src="./assets/images/homeScreen/techgun.jpg" alt="user-profile-pic">
+                        </a>
+                    </div>
+                    <div class="user-name">
+                        <a href="https://www.instagram.com/techgun.official/">techgun.official</a>
+                        <span>Tech Gun</span>
+                    </div>
+                </div>
+                <div class="follow-btn">Follow</div>
+            </div>
+
+            <div class="user-profile" style="flex-direction: row;">
+                <div style="width: 319px; display: flex; align-items: center;">
+                    <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                        <a href="https://www.instagram.com/code.steps/">
+                            <img src="./assets/images/homeScreen/codestepbystep.jpg" alt="user-profile-pic">
+                        </a>
+                    </div>
+                    <div class="user-name">
+                        <a href="https://www.youtube.com/@codestepbystep">code_step_by_step</a>
+                        <span>Anil Sidhu</span>
+                    </div>
+                </div>
+                <div class="follow-btn">Follow</div>
+            </div>
+
+            <div class="user-profile" style="flex-direction: row;">
+                <div style="width: 319px; display: flex; align-items: center;">
+                    <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                        <a href="https://www.instagram.com/code_ninja/">
+                            <img src="./assets/images/homeScreen/code_ninja.jpg" alt="user-profile-pic">
+                        </a>
+                    </div>
+                    <div class="user-name">
+                        <a href="https://www.instagram.com/code_ninja/">code_ninja</a>
+                        <span>Code Ninja</span>
+                    </div>
+                </div>
+                <div class="follow-btn">Follow</div>
+            </div>
+
+            <div class="user-profile" style="flex-direction: row;">
+                <div style="width: 319px; display: flex; align-items: center;">
+                    <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                        <a href="https://www.instagram.com/tech_geek/">
+                            <img src="./assets/images/homeScreen/tech_geek.jpg" alt="user-profile-pic">
+                        </a>
+                    </div>
+                    <div class="user-name">
+                        <a href="https://www.instagram.com/techgeek.official/">tech_geek</a>
+                        <span>Tech Geek</span>
+                    </div>
+                </div>
+                <div class="follow-btn">Follow</div>
+            </div>
+
+            <div class="user-profile" style="flex-direction: row;">
+                <div style="width: 319px; display: flex; align-items: center;">
+                    <div class="user-profile-pic" style="height: 54px; width: 54px; margin-right: 5px;">
+                        <a href="https://www.instagram.com/reactnativemobile/">
+                            <img src="./assets/images/homeScreen/reactnative.jpg" alt="user-profile-pic">
+                        </a>
+                    </div>
+                    <div class="user-name">
+                        <a href="https://www.instagram.com/reactnativemobile/">reactnativemobile</a>
+                        <span>React Native</span>
+                    </div>
+                </div>
+                <div class="follow-btn">Follow</div>
+            </div>
+        </div>
+
+        <div class="copyrights" style="width: 287px; padding-bottom: 38px;">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Press</a>
+            <a href="#">API</a>
+            <a href="#">Jobs</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Language</a>
+            <a href="#">Meta Verified</a>
+        </div>
+    </section>
+
+    <script src="./scripts/homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

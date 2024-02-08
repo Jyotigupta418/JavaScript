@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="image-container">
+                <div class="fixedImgContainer">
+                    <img src="./assets/images/loginScreen/mobileFrame.png" />
+                    <img src="./assets/images/loginScreen/fixedframeimg.png" style=" position: absolute; margin: 16px 0 0 17px ; height:522px; width: 110px; "/>
+                    
+                </div>
+                
+                <div class="activeImgFrame" >
+                    <img src="./assets/images/loginScreen/mobileFrame.png" />
+                    <div class="activeimages" style=" position: absolute; margin: 17px 0 0 19px;">
+
+                        <img src="./assets/images/loginScreen/screen1.png" />
+                        <img src="./assets/images/loginScreen/screen2.png" />
+                        <img src="./assets/images/loginScreen/screen3.png" />
+                        <img src="./assets/images/loginScreen/screen4.png" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-content">
+                <div class="inputField">
+                    <div class="instagramLogo">
+                        <img src="./assets/images/loginScreen/instagramlogo.png"/>
+                    </div>
+                    <p style="font-size: 8px; display: flex;justify-content: center;">username: admin</p>
+                    <p style="font-size: 8px;display: flex;justify-content: center;">password: admin</p>
+
+                    <form id="form">
+                        <input type="text" placeholder="Phone number, username, or email" id="username">
+                        <input type="password" placeholder="Password" id="password">
+                        <button type="button" id="btn">Log in</button>
+                    </form>
+
+                    <div class="or-container">
+                        <div class="line"></div>
+                        <div class="or">or</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="fb">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <span><a href="#">Log in with Facebook</a></span>
+                    </div>
+
+                    <span class="error"></span>
+                    
+                    <div id="forgotPassword">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <div class="signup">
+                    <p>Dont't have an account? </p>
+                    <a href="#">Sign up</a>
+                </div>
+
+                <div class="getAppContainer">
+                    <p>Get the app.</p>
+                    <div class="getapp-image">
+                        <img src="./assets/images/loginScreen/screen5.png" alt="Google Play" id="google">
+                        <img src="./assets/images/loginScreen/screen6.png" alt="Microsoft" id="microsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-container">
+            <div class="links">
+                <a href="">Meta </a>
+                <a href="">About </a>
+                <a href="">Blog </a>
+                <a href="">Jobs </a>
+                <a href="">Help </a>
+                <a href="">API </a>
+                <a href="">Privacy </a>
+                <a href="">Terms </a>
+                <a href="">Locations </a>
+                <a href="">Instagram Lite </a>
+                <a href="">Threads </a>
+                <a href="">Contact Uploading & Non-Users </a>
+                <a href="">Meta Verified </a>
+            </div>
+
+            <div class="language">
+                <select id="language" name="language" style="border: none;">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語 (Japanese)</option>
+                    <option value="ko">한국어 (Korean)</option>
+                    <option value="zh">中文 (Chinese)</option>
+                    <option value="ar">العربية (Arabic)</option>
+                    <option value="ru">Русский (Russian)</option>
+                    <option value="pt">Português</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                    <option value="bn">বাংলা (Bengali)</option>
+                    <option value="vi">Tiếng Việt (Vietnamese)</option>
+                    <option value="tr">Türkçe (Turkish)</option>
+                    <option value="nl">Nederlands (Dutch)</option>
+                </select>
+                <p>© 2023 Instagram from Meta</p> 
+                
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/login.js">
+    </script>
+</body>
+
+</html>
