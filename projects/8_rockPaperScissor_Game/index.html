@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock, Paper, Scissors</h1>
+
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURRXMrcqSwUakqkJlGctmSqvY3HueOSKw3xdDhgGpOwlSaG9gsJ9iBCKh65RE7bjp-v4&usqp=CAU"
+            alt="Rock"
+            class="rock-image"
+          />
+          <p style="margin: 0">Rock</p>
+        </div>
+        <div class="choice" id="paper">
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223645/paper.jpeg"
+            alt="Paper"
+            class="paper-image"
+          />
+          <p style="margin: 0">Paper</p>
+        </div>
+        <div class="choice" id="scissors">
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223721/scissor.jpeg"
+            alt="Scissors"
+            class="scissors-image"
+          />
+          <p style="margin: 0">Scissors</p>
+        </div>
+      </div>
+
+      <div class="result"></div>
+      <button class="restart-button" onclick="restartGame()">Restart</button>
+    </div>
+
+    <script src="./rockPaperScissor.js"></script>
+  </body>
+</html>
