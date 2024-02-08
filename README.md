@@ -20,6 +20,9 @@ Welcome to the JavaScript Projects Repository! This repository contains a collec
 
 8. Instagram Clone: A simplified version of Instagram, featuring user authentication, homepage navigation, search modal, message modal, post interaction, profile management, and more. You can also view the Instagram Clone project on LinkedIn to get a better understanding of how it looks: [Instagram Clone on LinkedIn](https://www.linkedin.com/posts/jyoti-kumari-gupta-88bb9829a_webdevelopment-frontenddevelopment-javascript-activity-7161226081771958273-CPmT?utm_source=share&utm_medium=member_desktop)
 
+![instagram clone loginScreen](./projects/9_InstagramClone/assets/images/projectScreenshots/instalogin.png)
+![instagram clone homeScreen](./projects/9_InstagramClone/assets/images/projectScreenshots/instahome.png.png)
+
 ## How to Use: 
 
 - Clone the repository to your local machine using the `git clone` command.
